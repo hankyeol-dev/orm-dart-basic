@@ -1,8 +1,10 @@
 void main() {
-  int start = 1;
+  int start = 1; // 값
+
   int ahh = 0;
   int clap = 0;
   int rool = 0;
+
   List<int> players = [0, 0, 0, 0];
 
   while (start <= 100) {
@@ -35,16 +37,6 @@ void main() {
 
   print("가장 많은 clap을 출력한 플레이어: Player${whichIsMax(players)}");
 }
-
-// 조건
-// 우선 순위 - 30의 배수, 3의 배수, 10의 배수
-// 30의 배수 - ahh
-// 3의 배수 - clap
-// 10의 배수 - rool
-
-// 변수
-// player별 clap 갯수를 저장하는 변수
-// player1 ~ 4의 숫자를 print를 하는 로직이 필요
 
 bool isThirtyMultiples(int number) {
   return number % 30 == 0;
