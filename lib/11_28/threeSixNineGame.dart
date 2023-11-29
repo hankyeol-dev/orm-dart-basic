@@ -50,6 +50,10 @@ bool isTenMultiples(int number) {
   return number % 10 == 0;
 }
 
+bool isMultiples({int targetNumber = 1, int multipleNumber = 3}) {
+  return targetNumber % multipleNumber == 0;
+}
+
 int whichPlayer(int number) {
   return number % 4 == 0 ? 4 : number % 4;
 }
